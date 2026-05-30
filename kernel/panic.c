@@ -1,4 +1,5 @@
 #include <system.h>
+#include <cpu.h>
 
 void kernel_panic(const char *message) {
   cpu_disable_interrupts();
