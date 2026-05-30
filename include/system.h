@@ -9,6 +9,6 @@
 void safe_print(const char *str);
 
 // Shuts down kernel execution safely during unrecoverable errors
-void kernel_panic(const char *message, const char *file, int line);
+void kernel_panic(const char *message);
 
 #endif
