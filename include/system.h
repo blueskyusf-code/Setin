@@ -11,4 +11,12 @@ void safe_print(const char *str);
 // Shuts down kernel execution safely during unrecoverable errors
 void kernel_panic(const char *message);
 
+// Estrutura para guardar as informações da sessão anterior
+struct SystemConfig {
+    unsigned int boot_count;     // Count System initialize
+    char username[32];           // Name of User
+    char hostname[32];           // Name of Machine (Example: Setin)
+    unsigned char setup_done;    // 0 = Require Setup Wizard, 1 = Comum initialize
+};
+
 #endif
