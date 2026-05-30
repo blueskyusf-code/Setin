@@ -2,7 +2,7 @@
 #include <cpu.h>
 
 void kernel_panic(const char *message) {
-  cssiep_();
+  cssiep_shutdown_module();
   cpu_disable_interrupts();
   // Print Panic Message
   safe_print("KERNEL PANIC\n");
