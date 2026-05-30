@@ -1,0 +1,14 @@
+#include <system.h>
+
+void kernel_panic(const char *message) {
+  // Print Panic Message
+  safe_print("KERNEL PANIC\n");
+  safe_print("Details: ");
+  safe_print(message);
+  safe_print("\n");
+
+  // Enter to Secure Mode
+  while (1) {
+     __asm__("cli; hlt");
+  }
+}
