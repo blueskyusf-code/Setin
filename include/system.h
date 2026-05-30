@@ -11,7 +11,7 @@ void safe_print(const char *str);
 // Shuts down kernel execution safely during unrecoverable errors
 void kernel_panic(const char *message);
 
-// Estrutura para guardar as informações da sessão anterior
+// Verify Initialize
 struct SystemConfig {
     unsigned int boot_count;     // Count System initialize
     char username[32];           // Name of User
