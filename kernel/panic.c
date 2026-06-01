@@ -1,6 +1,7 @@
 #include "system.h"
 #include "safe_print.c"
 #include "cpu.h"
+#include "cpu.c"
 
 void kernel_panic(const char *message) {
   cpu_disable_interrupts();
