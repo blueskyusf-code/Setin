@@ -1,7 +1,3 @@
-// ==============================================================================
-// SETIN - include/system.h (Unified Core System & Security Definitions)
-// ==============================================================================
-
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
@@ -32,7 +28,7 @@ struct SystemConfig {
 
 // --- Core Kernel Functions ---
 void safe_print(const char *str);
-void kernel_panic(const char *error_message);
+void kernel_panic(const char *message);
 
 // --- CSSIEP Security & Module Management Handlers ---
 int cssiep_check_permission(SecurityLevel current_level, SecurityLevel required_level, const char *context_name);
