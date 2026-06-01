@@ -1,4 +1,5 @@
 #include "system.h"
+#include "safe_print.c"
 #include "cpu.h"
 
 void kernel_panic(const char *message) {
